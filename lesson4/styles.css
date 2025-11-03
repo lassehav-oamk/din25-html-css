@@ -1,0 +1,37 @@
+p {
+    color: blue;
+}
+
+#specialtext {
+    font-weight: 700;
+}
+
+#example {
+    border: 10px solid yellow;
+    background-color: blue;
+}
+
+div {
+    background-color: green;
+    width: 100px;
+    height: 200px;
+    margin: 10px;
+}
+
+.wider {
+    width: 150px;
+    background-color: pink;
+}
+
+table.harvia {
+    width: 300px;
+    border-spacing: 0px;
+}
+
+.redline {
+    border-bottom: 1px solid red;
+}
+
+.brownhighlight {
+    background-color: rgb(223, 212, 183)
+}
