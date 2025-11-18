@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            :root {
+                --test-color: red;
+            }
+
+            .box {
+                width: 200px;
+                height: 200px;
+                background-color: var(--test-color);
+                /* transition-property: all;
+                transition-duration: 0.25s; */
+                transition: all 0.5s cubic-bezier(0.42,0.00,0.58,1.00);
+                
+            }
+
+            .box:hover {
+                background-color: green;
+                transform: rotateY(180deg);
+            }
+
+            .animationBox {
+                width: 100px;
+                height: 100px;
+                border: 1px solid black;
+                animation-name: boxMove;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+            }
+
+            @keyframes boxMove {
+                0% {
+                    transform: translate(0px, 0px)
+                }
+                25% {
+                    transform: translate(200px, 0px)
+                }
+                50% {
+                    transform: translate(200px, 200px)
+                }
+                75% {
+                    transform: translate(0px, 200px)
+                }
+                100% {
+                    transform: translate(0px, 0px)
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Transition Demo</h1>
+        <div class="box">Box example</div>
+
+        <h2>Animation Example</h2>
+        <div class="animationBox"></div>
+    </body>
+</html>
